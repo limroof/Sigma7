@@ -2,10 +2,8 @@ import { Section, H2, Columns, Item } from "./styles/sectionFour.js";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import Navigation from "swiper/modules/navigation/navigation";
 import "swiper/swiper.min.css";
-import Autoplay from "swiper/modules/autoplay/autoplay.js";
 
 export default function SectionOne() {
   const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
@@ -36,11 +34,7 @@ export default function SectionOne() {
           slidesPerView={2}
           navigation={true}
           loop={true}
-          modules={[Navigation, Autoplay]}
-          Autoplay={{
-            delay: 100,
-            disableOnInteraction: false,
-          }}
+          modules={[Navigation]}
           className='mySwiper'
         >
           <SwiperSlide>

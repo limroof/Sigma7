@@ -6,13 +6,18 @@ import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Navigation from "swiper/modules/navigation/navigation";
 import "swiper/swiper.min.css";
-
+import { reveal } from "../../utils/reveal.js";
 export default function Gallerie(props) {
   useEffect(() => {
     document.title = props.title + " - Sigma7 Société d'éclairage publique";
     document.querySelector(".fadein") &&
       document.querySelector(".fadein").classList.add("onPagechange");
-  }, []);
+    setTimeout(() => {
+      document.querySelector(".reveal") &&
+        document.querySelector(".reveal").classList.add("active");
+    }, []);
+  }, 1000);
+
   const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
 
   const [listImage, setImage] = useState([]);
@@ -31,10 +36,11 @@ export default function Gallerie(props) {
         )
       )
     );
+    window.addEventListener("scroll", () => reveal());
   }, []);
 
   return (
-    <Section className='main-mx-w fadein'>
+    <Section className='main-mx-w fadein '>
       <H2>Les réalisations de la société Espace Génie</H2>
       <P>
         Notre société, Espace Génie, intervient pour vos constructions neuves
@@ -44,7 +50,7 @@ export default function Gallerie(props) {
         <br />
         <Link to='/contact'> contactez-nous</Link>.
       </P>
-      <div>
+      <div className='reveal'>
         {!isMobile ? (
           listImage.map((item, index) => {
             return <Img key={`${index}im`} imgSrc={item}></Img>;

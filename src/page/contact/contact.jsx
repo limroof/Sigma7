@@ -17,9 +17,13 @@ export default function Contact(props) {
     document.title = props.title + " - Sigma7 Société d'éclairage publique";
     document.querySelector(".fadein") &&
       document.querySelector(".fadein").classList.add("onPagechange");
+    setTimeout(() => {
+      document.querySelector(".reveal") &&
+        document.querySelector(".reveal").classList.add("active");
+    }, []);
   }, []);
   return (
-    <Section className='main-mx-w fadein'>
+    <Section className='main-mx-w fadein reveal'>
       <H2>Formulaire de contact</H2>
       <Div>
         <Form>

@@ -12,7 +12,7 @@ export default function SectionOne() {
     <Section>
       <H2>Nos partenaires</H2>
       {!isMobile ? (
-        <Columns className='main-mx-w'>
+        <Columns className='main-mx-w reveal'>
           <Item>
             <H2>Logo Partenaire</H2>
             <H2>Nom Compagnie</H2>

@@ -22,7 +22,7 @@ export default function SectionOne() {
   const isMobileTwo = useMediaQuery({ query: `(max-width: 480px)` });
 
   return (
-    <Section className='main-mx-w'>
+    <Section className='main-mx-w reveal'>
       <H2>Services</H2>
       {!isMobile ? (
         <Columns>

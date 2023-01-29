@@ -4,7 +4,7 @@ import React from "react";
 
 export default function SectionOne() {
   return (
-    <Section className='main-mx-w'>
+    <Section className='main-mx-w reveal'>
       <div>
         <H2>About Us</H2>
         <Paragraph>

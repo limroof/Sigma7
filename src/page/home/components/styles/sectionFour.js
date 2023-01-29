@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import img from "../../../../public/img/HomeSectionFour.png";
-import { keyframes } from "styled-components";
 
 export const Section = styled.section`
   background-image: url(${img});

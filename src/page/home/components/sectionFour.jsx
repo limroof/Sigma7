@@ -1,8 +1,7 @@
 import { Section, H2, Columns, Item } from "./styles/sectionFour.js";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Swiper, SwiperSlide, loop } from "swiper/react";
-import autoplay from "swiper/modules/autoplay/autoplay";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import Navigation from "swiper/modules/navigation/navigation";
 import "swiper/swiper.min.css";

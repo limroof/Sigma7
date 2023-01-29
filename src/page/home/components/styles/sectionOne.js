@@ -25,6 +25,9 @@ export const H1 = styled.h1`
   max-width: 480px;
   margin-top: 100px;
   margin-bottom: 20px;
+  @media (max-width: 700px) {
+    font-size: 55px;
+  }
 `;
 
 const hoverEffect = keyframes`

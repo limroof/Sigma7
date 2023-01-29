@@ -9,7 +9,7 @@ import "swiper/swiper.min.css";
 
 export default function Gallerie(props) {
   useEffect(() => {
-    document.title = props.title;
+    document.title = props.title + " - Sigma7 Société d'éclairage publique";
     document.querySelector(".fadein") &&
       document.querySelector(".fadein").classList.add("onPagechange");
   }, []);

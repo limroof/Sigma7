@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   text-align: center;
-  margin-bottom: 140px;
   overflow: hidden;
   > div {
     margin-top: 100px;
@@ -19,7 +18,6 @@ export const Section = styled.section`
     }
   }
   @media (max-width: 900px) {
-    margin-bottom: 80px;
     > div > div {
       flex: auto;
       width: 100%;

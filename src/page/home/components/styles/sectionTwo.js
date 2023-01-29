@@ -5,9 +5,11 @@ export const Section = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-bottom: 100px;
   column-gap: 20px;
-
+  @media (max-width: 900px) {
+    margin-bottom: 60px;
+  }
   > div {
     width: 54%;
     padding-right: 5%;

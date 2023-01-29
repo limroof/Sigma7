@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
+  margin-top: 80px;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;

@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 const delayTime = "0.3s";
 export const Section = styled.section`
-  margin: 0 auto 120px auto;
+  margin: 0 auto;
+  @media (max-width: 900px) {
+  }
 `;
 export const Div = styled.div`
   display: flex;

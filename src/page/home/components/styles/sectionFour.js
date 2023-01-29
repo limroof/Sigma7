@@ -8,7 +8,6 @@ export const Section = styled.section`
   background-repeat: no-repeat;
   width: 100%;
   padding: 80px 10px;
-  margin-bottom: 100px;
   overflow: hidden;
 `;
 export const H2 = styled.h2`

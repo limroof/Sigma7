@@ -14,6 +14,10 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 100px;
+  @media (max-width: 900px) {
+    margin-bottom: 60px;
+  }
 `;
 
 export const Wrapper = styled.div`

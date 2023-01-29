@@ -2,23 +2,26 @@ import styled from "styled-components";
 import banner from "../../../public/img/pres-banner.png";
 import Img from "../../../public/img/pres-sec2.png";
 
-export const Section = styled.section``;
+export const Section = styled.div``;
 
-export const Banner = styled.div`
+export const Banner = styled.section`
   background-image: url(${banner});
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
   width: 100%;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
   @media (max-width: 700px) {
     display: none;
   }
+  @media (max-width: 900px) {
+  }
 `;
 
-export const SectionTwo = styled.div`
+export const SectionTwo = styled.section`
   display: flex;
   justify-content: space-between;
+
   > div {
     width: 48%;
   }
@@ -27,7 +30,6 @@ export const SectionTwo = styled.div`
     list-style-position: inside;
     font-size: 20px;
   }
-  margin-bottom: 120px;
   @media (max-width: 700px) {
     margin-bottom: 80px;
     background-image: url(${Img});

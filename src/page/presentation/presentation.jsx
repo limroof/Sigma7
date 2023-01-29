@@ -20,14 +20,16 @@ export default function Presentation(props) {
   }, []);
   isMobile &&
     setTimeout(() => {
+      document.querySelector(".fadein") &&
+        document.querySelector(".fadein").classList.remove("fadein");
       document.querySelector(".reveal") &&
         document.querySelector(".reveal").classList.add("active");
     }, []);
 
   return (
-    <Section className='fadein '>
+    <Section className='fadein reveal'>
       <Banner></Banner>
-      <SectionTwo className='main-mx-w reveal'>
+      <SectionTwo className='main-mx-w '>
         <Paragraph>
           <H2>Presentation</H2>
           <p>

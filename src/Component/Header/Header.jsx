@@ -90,7 +90,12 @@ export default function Header() {
                 </Li>
               );
             })}
-            <Button to='/contact'>
+            <Button
+              to='/contact'
+              onClick={() => {
+                setIsDrawerOpen(!isDrawerOpen);
+              }}
+            >
               <span>Contact us</span>
             </Button>
           </UlMobile>

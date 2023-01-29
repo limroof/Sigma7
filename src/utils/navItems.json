@@ -1,0 +1,6 @@
+[
+  { "id": "navItem1", "title": "Accueil", "link": "/" },
+  { "id": "navItem2", "title": "Presentation", "link": "/presentation" },
+  { "id": "navItem3", "title": "Gallerie", "link": "/gallerie" },
+  { "id": "navItem4", "title": "Contact", "link": "/contact" }
+]

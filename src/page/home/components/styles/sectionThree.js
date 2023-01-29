@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
   margin-bottom: 100px;
   margin-top: calc(5% + 100px);
+  overflow: hidden;
 `;
 export const H2 = styled.h2`
   text-align: center;

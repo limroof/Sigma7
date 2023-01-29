@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
   text-align: center;
   margin-bottom: 140px;
-
+  overflow: hidden;
   > div {
     margin-top: 100px;
     display: flex;

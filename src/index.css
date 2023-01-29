@@ -65,3 +65,20 @@ p.no-m {
 .swiper {
   overflow: visible !important;
 }
+
+@keyframes onPagechange {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadein {
+  opacity: 0;
+}
+.onPagechange {
+  animation: onPagechange 0.5s ease-in forwards;
+}

@@ -10,6 +10,8 @@ import "swiper/swiper.min.css";
 export default function Gallerie(props) {
   useEffect(() => {
     document.title = props.title;
+    document.querySelector(".fadein") &&
+      document.querySelector(".fadein").classList.add("onPagechange");
   }, []);
   const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
 
@@ -32,7 +34,7 @@ export default function Gallerie(props) {
   }, []);
 
   return (
-    <Section className='main-mx-w'>
+    <Section className='main-mx-w fadein'>
       <H2>Les réalisations de la société Espace Génie</H2>
       <P>
         Notre société, Espace Génie, intervient pour vos constructions neuves

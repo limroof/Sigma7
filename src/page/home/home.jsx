@@ -9,9 +9,12 @@ import { useEffect } from "react";
 export default function Home(props) {
   useEffect(() => {
     document.title = props.title;
+    document.querySelector(".fadein") &&
+      document.querySelector(".fadein").classList.add("onPagechange");
   }, []);
+
   return (
-    <Container>
+    <Container className='fadein fadein'>
       <SectionOne />
       <SectionTwo />
       <SectionThree />

@@ -15,9 +15,11 @@ import { useEffect } from "react";
 export default function Contact(props) {
   useEffect(() => {
     document.title = props.title;
+    document.querySelector(".fadein") &&
+      document.querySelector(".fadein").classList.add("onPagechange");
   }, []);
   return (
-    <Section className='main-mx-w'>
+    <Section className='main-mx-w fadein'>
       <H2>Formulaire de contact</H2>
       <Div>
         <Form>

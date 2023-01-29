@@ -12,10 +12,12 @@ import { useEffect } from "react";
 export default function Presentation(props) {
   useEffect(() => {
     document.title = props.title;
+    document.querySelector(".fadein") &&
+      document.querySelector(".fadein").classList.add("onPagechange");
   }, []);
 
   return (
-    <Section>
+    <Section className='fadein'>
       <Banner></Banner>
       <SectionTwo className='main-mx-w'>
         <Paragraph>

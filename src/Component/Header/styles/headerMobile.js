@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-const delayTime = "0.6s";
 
+const delayTime = "0.6s";
 export const BurgerButton = styled.div`
   display: none;
   @media (max-width: 690px) {
@@ -35,7 +35,7 @@ const afterOpenDrawer = keyframes`
 export const UlMobile = styled.ul`
   display: none;
   margin-top: 0;
-  animation : ${openDrawer} 0.5s ease-out forwards;
+  animation : ${openDrawer} 0.3s ease-out forwards;
   @media (max-width: 690px) {
     display: flex;
     flex-direction: column;

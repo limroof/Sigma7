@@ -8,6 +8,7 @@ import Navigation from "swiper/modules/navigation/navigation";
 import "swiper/swiper.min.css";
 import { reveal } from "../../utils/reveal.js";
 export default function Gallerie(props) {
+  const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
   useEffect(() => {
     document.title = props.title + " - Sigma7 Société d'éclairage publique";
     document.querySelector(".fadein") &&
@@ -17,8 +18,6 @@ export default function Gallerie(props) {
         document.querySelector(".reveal").classList.add("active");
     }, []);
   }, 1000);
-
-  const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
 
   const [listImage, setImage] = useState([]);
 

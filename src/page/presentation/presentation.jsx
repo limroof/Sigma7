@@ -9,13 +9,20 @@ import {
 import React from "react";
 import { useEffect } from "react";
 import { reveal } from "../../utils/reveal.js";
+import { useMediaQuery } from "react-responsive";
 export default function Presentation(props) {
+  const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
   useEffect(() => {
     document.title = props.title + " - Sigma7 Société d'éclairage publique";
     document.querySelector(".fadein") &&
       document.querySelector(".fadein").classList.add("onPagechange");
     window.addEventListener("scroll", () => reveal());
   }, []);
+  isMobile &&
+    setTimeout(() => {
+      document.querySelector(".reveal") &&
+        document.querySelector(".reveal").classList.add("active");
+    }, []);
 
   return (
     <Section className='fadein '>

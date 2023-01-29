@@ -7,7 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Navigation from "swiper/modules/navigation/navigation";
 import "swiper/swiper.min.css";
 
-export default function Gallerie() {
+export default function Gallerie(props) {
+  useEffect(() => {
+    document.title = props.title;
+  }, []);
   const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
 
   const [listImage, setImage] = useState([]);
@@ -42,7 +45,7 @@ export default function Gallerie() {
       <div>
         {!isMobile ? (
           listImage.map((item, index) => {
-            return <Img imgSrc={item}></Img>;
+            return <Img key={`${index}im`} imgSrc={item}></Img>;
           })
         ) : (
           <Swiper

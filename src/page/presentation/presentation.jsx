@@ -7,7 +7,13 @@ import {
   Image,
 } from "./styles/presentation.js";
 import React from "react";
-export default function Presentation() {
+import { useEffect } from "react";
+
+export default function Presentation(props) {
+  useEffect(() => {
+    document.title = props.title;
+  }, []);
+
   return (
     <Section>
       <Banner></Banner>

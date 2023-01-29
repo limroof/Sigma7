@@ -17,14 +17,13 @@ export default function Index() {
     <HashRouter basename='/'>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} title='Ismailos' />
+        <Route path='/' element={<Home title='Accueil' />} />
         <Route
           path='/presentation'
-          element={<Presentation />}
-          title='Ismailos'
+          element={<Presentation title='Presentation' />}
         />
-        <Route path='/gallerie' element={<Gallerie />} title='Ismailos' />
-        <Route path='/contact' element={<Contact />} title='Ismailos' />
+        <Route path='/gallerie' element={<Gallerie title='Gallerie' />} />
+        <Route path='/contact' element={<Contact title='Contact' />} />
       </Routes>
       <Footer />
     </HashRouter>

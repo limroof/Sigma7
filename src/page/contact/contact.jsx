@@ -12,18 +12,16 @@ import {
 } from "./styles/contact.js";
 import image from "../../public/img/contact.png";
 import { useEffect } from "react";
+import { reveal } from "../../utils/reveal.js";
 export default function Contact(props) {
   useEffect(() => {
     document.title = props.title + " - Sigma7 Société d'éclairage publique";
     document.querySelector(".fadein") &&
       document.querySelector(".fadein").classList.add("onPagechange");
-    setTimeout(() => {
-      document.querySelector(".reveal") &&
-        document.querySelector(".reveal").classList.add("active");
-    }, []);
+    window.addEventListener("scroll", () => reveal());
   }, []);
   return (
-    <Section className='main-mx-w fadein reveal'>
+    <Section className='main-mx-w fadein'>
       <H2>Formulaire de contact</H2>
       <Div>
         <Form>

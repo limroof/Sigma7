@@ -75,14 +75,28 @@ p.no-m {
     opacity: 1;
   }
 }
+@keyframes onPagechangeMobile {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .fadein {
   opacity: 0;
 }
 .onPagechange {
-  animation: onPagechange 0.5s ease-in forwards;
+  animation: onPagechange 0.5s ease forwards;
 }
-
+@media screen and (max-width: 690px) {
+  .onPagechange {
+    animation: onPagechangeMobile 1s ease forwards;
+  }
+}
 .reveal {
   position: relative;
   transform: translateY(150px);

@@ -46,7 +46,7 @@ export default function Gallerie(props) {
         <Link to='/contact'> contactez-nous</Link>.
       </P>
       <div>
-        {!isMobile ? (
+        {listImage.length > 1 && !isMobile ? (
           listImage.map((item, index) => {
             return <Img key={`${index}im`} imgSrc={item}></Img>;
           })

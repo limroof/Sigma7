@@ -18,8 +18,11 @@ import { useEffect } from "react";
 import { reveal } from "../../utils/reveal.js";
 import { SubmitForm } from "../../api/submitForm.jsx";
 import reCAPTCHA from "react-google-recaptcha";
+import React, { useRef } from "react";
 
 export default function Contact(props) {
+  const captchaRef = useRef(null);
+
   useEffect(() => {
     document.title = props.title + " - Sigma7 Société d'éclairage publique";
     document.querySelector(".fadein") &&
@@ -55,6 +58,7 @@ export default function Contact(props) {
           >
             <Label htmlFor='name'>Nom</Label>
             <Input
+              required
               id='name'
               name='name'
               type='text'
@@ -66,6 +70,7 @@ export default function Contact(props) {
             ></Input>
             <Label htmlFor='telephone'>Numéro de téléphone</Label>
             <Input
+              required
               id='telephone'
               name='telephone'
               type='tel'
@@ -76,6 +81,7 @@ export default function Contact(props) {
             ></Input>
             <Label htmlFor='email'>E-mail</Label>
             <Input
+              required
               id='email'
               name='email'
               type='email'
@@ -107,7 +113,10 @@ export default function Contact(props) {
                 <img src={spinner} alt='chargement'></img>
               )}
             </Button>
-            <reCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
+            <reCAPTCHA
+              sitekey={process.env.REACT_APP_SITE_KEY}
+              ref={captchaRef}
+            />
             {isError && (
               <Error>
                 Une erreur inattendue vous empêche d'envoyer le message

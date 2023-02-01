@@ -9,6 +9,7 @@ import {
   Input,
   Textarea,
   Button,
+  Error,
 } from "./styles/contact.js";
 import image from "../../public/img/contact.png";
 import { useEffect } from "react";
@@ -31,15 +32,17 @@ export default function Contact(props) {
   });
 
   const [isMessageSent, setIsMessageSent] = useState(false);
+  const [isError, setError] = useState(false);
+
   const sendMessage = (e) => {
     e.preventDefault();
-    SubmitForm(formData);
+    SubmitForm(formData, setIsMessageSent, setError);
   };
   return (
     <Section className='main-mx-w fadein'>
       <H2>Formulaire de contact</H2>
       <Div>
-        {isMessageSent ? (
+        {!isMessageSent ? (
           <Form
             onSubmit={(e) => {
               sendMessage(e);
@@ -93,10 +96,15 @@ export default function Contact(props) {
                 send
               </span>
             </Button>
+            {isError && (
+              <Error>
+                Une erreur inattendue vous empêche d'envoyer le message
+              </Error>
+            )}
           </Form>
         ) : (
           <div>
-            <h3>Message envoyé,</h3>
+            <p>Message envoyé</p>
           </div>
         )}
 

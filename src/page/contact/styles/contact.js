@@ -105,3 +105,7 @@ export const Button = styled.button`
     }
   }
 `;
+
+export const Error = styled.p`
+  color: red;
+`;

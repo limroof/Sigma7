@@ -41,13 +41,13 @@ export default function Footer() {
             );
           })}
         </LinksWrapper>
-        <iframe
+        <Iframe
           src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1343.3549180787097!2d-5.800822370960743!3d35.77226414838347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sca!4v1675234689192!5m2!1sfr!2sca'
           allowfullscreen=''
           loading='lazy'
           referrerpolicy='no-referrer-when-downgrade'
           title='Adresse du bureau Sigma7'
-        ></iframe>
+        ></Iframe>
         <Location>
           <div>
             <Line>

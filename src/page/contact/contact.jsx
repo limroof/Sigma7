@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   Section,
   Div,
@@ -18,7 +18,6 @@ import { useEffect } from "react";
 import { reveal } from "../../utils/reveal.js";
 import { SubmitForm } from "../../api/submitForm.jsx";
 import reCAPTCHA from "react-google-recaptcha";
-import React, { useRef } from "react";
 
 export default function Contact(props) {
   const captchaRef = useRef(null);

@@ -13,7 +13,7 @@ import {
 } from "./styles/contact.js";
 import image from "../../public/img/contact.png";
 import spinner from "../../public/img/spinner_white.png";
-
+import ScrollToTop from "../../helpers/ScrollToTop.js";
 import { useEffect } from "react";
 import { reveal } from "../../utils/reveal.js";
 import { SubmitForm } from "../../api/submitForm.jsx";
@@ -97,10 +97,6 @@ export default function Contact(props) {
                 setFormData({ ...formData, message: e.target.value });
               }}
             ></Textarea>
-            {/*             <ReCAPTCHA
-              sitekey={process.env.REACT_APP_SITE_KEY}
-              ref={captchaRef}
-            /> */}
             <Button disabled={isLoading && "disabled"}>
               {!isLoading ? (
                 <React.Fragment>
@@ -122,6 +118,7 @@ export default function Contact(props) {
         ) : (
           <div>
             <p>Message envoyé</p>
+            <ScrollToTop />
           </div>
         )}
 

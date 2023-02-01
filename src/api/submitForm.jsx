@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config(); // important
 
 export const SubmitForm = (
   formData,

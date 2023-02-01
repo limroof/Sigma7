@@ -100,10 +100,10 @@ export default function Contact(props) {
                 setFormData({ ...formData, message: e.target.value });
               }}
             ></Textarea>
-            <ReCAPTCHA
+            {/*             <ReCAPTCHA
               sitekey={process.env.REACT_APP_SITE_KEY}
               ref={captchaRef}
-            />
+            /> */}
             <Button disabled={isLoading && "disabled"}>
               {!isLoading ? (
                 <React.Fragment>

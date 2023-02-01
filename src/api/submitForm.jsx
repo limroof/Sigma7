@@ -4,7 +4,8 @@ export const SubmitForm = (
   formData,
   setIsMessageSent,
   setError,
-  setIsLoading
+  setIsLoading,
+  captchaRef
 ) => {
   const url =
     process.env.REACT_APP_REACT_ENV === "development"
@@ -33,6 +34,8 @@ export const SubmitForm = (
         setError(true);
         setIsLoading(false);
       }
+      const token = captchaRef.current.getValue();
+      captchaRef.current.reset();
     })
     .catch((e) => {
       setIsMessageSent(false);

@@ -43,7 +43,7 @@ export default function Contact(props) {
   const sendMessage = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    SubmitForm(formData, setIsMessageSent, setError, setIsLoading, captchaRef);
+    SubmitForm(formData, setIsMessageSent, setError, setIsLoading);
   };
   return (
     <Section className='main-mx-w fadein'>

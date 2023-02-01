@@ -90,7 +90,12 @@ export default function Contact(props) {
                 setFormData({ ...formData, message: e.target.value });
               }}
             ></Textarea>
-            <Button>
+            <Button
+              className='g-recaptcha'
+              data-sitekey='reCAPTCHA_site_key'
+              data-callback='onSubmit'
+              data-action='submit'
+            >
               <span>Envoyer</span>
               <span className='material-icons material-symbols-outlined'>
                 send

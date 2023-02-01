@@ -15,11 +15,8 @@ export const SubmitForm = (formData) => {
     body: JSON.stringify(formData),
   };
 
-  console.log(url);
   fetch(url + "/send", header)
     .then((res) => res.json())
     .then((data) => console.log(data))
-    .catch((e) => {
-      console.log(e);
-    });
+    .catch((e) => {});
 };

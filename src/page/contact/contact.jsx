@@ -15,6 +15,7 @@ import image from "../../public/img/contact.png";
 import { useEffect } from "react";
 import { reveal } from "../../utils/reveal.js";
 import { SubmitForm } from "../../api/submitForm.jsx";
+import reCAPTCHA from "react-google-recaptcha";
 
 export default function Contact(props) {
   useEffect(() => {
@@ -90,17 +91,13 @@ export default function Contact(props) {
                 setFormData({ ...formData, message: e.target.value });
               }}
             ></Textarea>
-            <Button
-              className='g-recaptcha'
-              data-sitekey='reCAPTCHA_site_key'
-              data-callback='onSubmit'
-              data-action='submit'
-            >
+            <Button>
               <span>Envoyer</span>
               <span className='material-icons material-symbols-outlined'>
                 send
               </span>
             </Button>
+            <reCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
             {isError && (
               <Error>
                 Une erreur inattendue vous empêche d'envoyer le message

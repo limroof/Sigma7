@@ -100,6 +100,10 @@ export default function Contact(props) {
                 setFormData({ ...formData, message: e.target.value });
               }}
             ></Textarea>
+            <ReCAPTCHA
+              sitekey={process.env.REACT_APP_SITE_KEY}
+              ref={captchaRef}
+            />
             <Button disabled={isLoading && "disabled"}>
               {!isLoading ? (
                 <React.Fragment>
@@ -112,10 +116,6 @@ export default function Contact(props) {
                 <img src={spinner} alt='chargement'></img>
               )}
             </Button>
-            <ReCAPTCHA
-              sitekey={process.env.REACT_APP_SITE_KEY}
-              ref={captchaRef}
-            />
             {isError && (
               <Error>
                 Une erreur inattendue vous empêche d'envoyer le message

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 const delayTime = "0.3s";
 export const Section = styled.section`
@@ -65,6 +66,16 @@ export const Textarea = styled.textarea`
   max-width: 100%;
 `;
 
+const loading = keyframes`
+ 0% {
+    transform:rotate(0deg);
+}
+
+ 100% {
+  transform:rotate(360deg);
+}
+`;
+
 export const Button = styled.button`
   border: none;
   margin-top: 30px;
@@ -103,6 +114,10 @@ export const Button = styled.button`
       transform: translatex(0px);
       opacity: 1;
     }
+  }
+  > img {
+    max-height: 40px;
+    animation: ${loading} 1s infinite linear;
   }
 `;
 

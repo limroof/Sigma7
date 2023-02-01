@@ -12,6 +12,8 @@ import {
   Error,
 } from "./styles/contact.js";
 import image from "../../public/img/contact.png";
+import spinner from "../../public/img/spinner_white.png";
+
 import { useEffect } from "react";
 import { reveal } from "../../utils/reveal.js";
 import { SubmitForm } from "../../api/submitForm.jsx";
@@ -34,10 +36,12 @@ export default function Contact(props) {
 
   const [isMessageSent, setIsMessageSent] = useState(false);
   const [isError, setError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendMessage = (e) => {
     e.preventDefault();
-    SubmitForm(formData, setIsMessageSent, setError);
+    setIsLoading(true);
+    SubmitForm(formData, setIsMessageSent, setError, setIsLoading);
   };
   return (
     <Section className='main-mx-w fadein'>
@@ -91,11 +95,17 @@ export default function Contact(props) {
                 setFormData({ ...formData, message: e.target.value });
               }}
             ></Textarea>
-            <Button>
-              <span>Envoyer</span>
-              <span className='material-icons material-symbols-outlined'>
-                send
-              </span>
+            <Button disabled={isLoading && "disabled"}>
+              {!isLoading ? (
+                <React.Fragment>
+                  <span>Envoyer</span>
+                  <span className='material-icons material-symbols-outlined'>
+                    send
+                  </span>
+                </React.Fragment>
+              ) : (
+                <img src={spinner} alt='chargement'></img>
+              )}
             </Button>
             <reCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
             {isError && (

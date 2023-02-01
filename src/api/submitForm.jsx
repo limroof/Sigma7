@@ -1,6 +1,11 @@
 require("dotenv").config();
 
-export const SubmitForm = (formData, setIsMessageSent, setError) => {
+export const SubmitForm = (
+  formData,
+  setIsMessageSent,
+  setError,
+  setIsLoading
+) => {
   const url =
     process.env.REACT_APP_REACT_ENV === "development"
       ? process.env.REACT_APP_LOCAL_API_URL
@@ -22,13 +27,16 @@ export const SubmitForm = (formData, setIsMessageSent, setError) => {
       if (data.ok) {
         setIsMessageSent(true);
         setError(false);
+        setIsLoading(false);
       } else {
         setIsMessageSent(false);
         setError(true);
+        setIsLoading(false);
       }
     })
     .catch((e) => {
       setIsMessageSent(false);
       setError(true);
+      setIsLoading(false);
     });
 };

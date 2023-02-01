@@ -41,13 +41,13 @@ export default function Footer() {
             );
           })}
         </LinksWrapper>
-        <Iframe
-          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1837.581087778574!2d-5.805582664272595!3d35.780178110343726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c7f4b7c6fc123%3A0xb0b07abe7c96cd49!2sR%C3%A9sidence%20Jouba!5e1!3m2!1sfr!2sca!4v1674798149721!5m2!1sfr!2sca'
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1343.3549180787097!2d-5.800822370960743!3d35.77226414838347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sca!4v1675234689192!5m2!1sfr!2sca'
           allowfullscreen=''
           loading='lazy'
           referrerpolicy='no-referrer-when-downgrade'
-          title='adresse'
-        ></Iframe>
+          title='Adresse du bureau Sigma7'
+        ></iframe>
         <Location>
           <div>
             <Line>

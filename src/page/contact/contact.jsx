@@ -30,7 +30,6 @@ export default function Contact(props) {
   });
   const sendMessage = (e) => {
     e.preventDefault();
-
     SubmitForm(formData);
   };
   return (

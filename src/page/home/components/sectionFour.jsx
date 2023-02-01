@@ -35,7 +35,7 @@ export default function SectionOne() {
           navigation={true}
           loop={true}
           modules={[Navigation]}
-          className='mySwiper'
+          className='mySwiper reveal'
         >
           <SwiperSlide>
             <Item>

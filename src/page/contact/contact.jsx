@@ -112,7 +112,7 @@ export default function Contact(props) {
                 <img src={spinner} alt='chargement'></img>
               )}
             </Button>
-            <reCAPTCHA
+            <ReCAPTCHA
               sitekey={process.env.REACT_APP_SITE_KEY}
               ref={captchaRef}
             />

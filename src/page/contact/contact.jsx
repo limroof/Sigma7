@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import {
   Section,
   Div,
@@ -17,11 +17,8 @@ import spinner from "../../public/img/spinner_white.png";
 import { useEffect } from "react";
 import { reveal } from "../../utils/reveal.js";
 import { SubmitForm } from "../../api/submitForm.jsx";
-/* import ReCAPTCHA from "react-google-recaptcha"; */
 
 export default function Contact(props) {
-  /* const captchaRef = useRef(null); */
-
   useEffect(() => {
     document.title = props.title + " - Sigma7 Société d'éclairage publique";
     document.querySelector(".fadein") &&

@@ -20,7 +20,7 @@ import { SubmitForm } from "../../api/submitForm.jsx";
 /* import ReCAPTCHA from "react-google-recaptcha"; */
 
 export default function Contact(props) {
-  const captchaRef = useRef(null);
+  /* const captchaRef = useRef(null); */
 
   useEffect(() => {
     document.title = props.title + " - Sigma7 Société d'éclairage publique";

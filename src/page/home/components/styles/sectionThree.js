@@ -44,4 +44,5 @@ export const Paragraph = styled.p`
 `;
 export const Img = styled.img`
   width: 100%;
+  height: auto;
 `;

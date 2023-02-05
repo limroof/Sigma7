@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import banner from "../../../public/img/pres-banner.png";
-import Img from "../../../public/img/pres-sec2.png";
+import Img from "../../../public/img/pres-sec2.jpg";
 
 export const Section = styled.div``;
 

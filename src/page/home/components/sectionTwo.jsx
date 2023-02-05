@@ -1,5 +1,5 @@
 import { Section, H2, Paragraph, Img } from "./styles/sectionTwo.js";
-import img from "../../../public/img/SectionTwoImg.png";
+import img from "../../../public/img/SectionTwoImg.webp";
 import React from "react";
 
 export default function SectionOne() {

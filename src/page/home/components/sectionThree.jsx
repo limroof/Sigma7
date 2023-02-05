@@ -9,9 +9,9 @@ import {
   Paragraph,
   Img,
 } from "./styles/sectionThree.js";
-import item1 from "../../../public/img/HomePage-item1.png";
-import item2 from "../../../public/img/HomePage-item2.png";
-import item3 from "../../../public/img/HomePage-item3.png";
+import item1 from "../../../public/img/HomePage-item1.webp";
+import item2 from "../../../public/img/HomePage-item2.webp";
+import item3 from "../../../public/img/HomePage-item3.webp";
 import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Navigation from "swiper/modules/navigation/navigation";

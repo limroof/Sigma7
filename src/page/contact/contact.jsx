@@ -11,7 +11,7 @@ import {
   Button,
   Error,
 } from "./styles/contact.js";
-import image from "../../public/img/contact.png";
+import image from "../../public/img/contact.webp";
 import spinner from "../../public/img/spinner_white.png";
 import ScrollToTop from "../../helpers/ScrollToTop.js";
 import { useEffect } from "react";

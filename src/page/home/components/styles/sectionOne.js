@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import banner from "../../../../public/img/banner.jpg";
+import banner from "../../../../public/img/banner.webp";
 import { Link } from "react-router-dom";
 
 const delayTime = "0.6s";

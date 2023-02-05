@@ -19,6 +19,7 @@ export const Nav = styled.nav`
 
 export const Img = styled.img`
   max-width: 149px;
+  height: auto;
 `;
 export const Ul = styled.ul`
   list-style: none;

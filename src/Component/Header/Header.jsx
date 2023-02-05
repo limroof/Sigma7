@@ -26,6 +26,8 @@ export default function Header() {
       <Nav className='main-mx-w'>
         <StyledLink to='/'>
           <Img
+            height='149px'
+            width='50px'
             src={logo}
             alt='Logo sigma7 Societé de construction éléctrique'
             onClick={() => {

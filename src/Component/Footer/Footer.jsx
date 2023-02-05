@@ -23,6 +23,8 @@ export default function Footer() {
       <ColumnOne className='main-mx-w'>
         <LinksWrapper>
           <Img
+            width='100%'
+            height='250px'
             src={logo}
             alt='Logo sigma7 Societé de construction éléctrique'
           ></Img>

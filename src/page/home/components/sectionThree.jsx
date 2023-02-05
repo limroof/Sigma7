@@ -27,7 +27,7 @@ export default function SectionOne() {
       {!isMobile ? (
         <Columns>
           <Item>
-            <Img src={item1} alt=''></Img>
+            <Img width='100%' height='auto' src={item1} alt=''></Img>
             <H4>High current. Low current electrical work</H4>
             <Paragraph>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
@@ -35,7 +35,7 @@ export default function SectionOne() {
             </Paragraph>
           </Item>
           <Item>
-            <Img src={item2} alt=''></Img>
+            <Img width='100%' height='auto' src={item2} alt=''></Img>
             <H4>Electromechanics</H4>
             <Paragraph>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
@@ -43,7 +43,7 @@ export default function SectionOne() {
             </Paragraph>
           </Item>
           <Item>
-            <Img src={item3} alt=''></Img>
+            <Img width='100%' height='auto' src={item3} alt=''></Img>
             <H4>Electrification of Housing Estates</H4>
             <Paragraph>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur

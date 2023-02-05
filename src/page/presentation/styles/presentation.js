@@ -8,6 +8,7 @@ export const Banner = styled.section`
   background-image: url(${banner});
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 80vh;
   width: 100%;
   margin-bottom: 100px;

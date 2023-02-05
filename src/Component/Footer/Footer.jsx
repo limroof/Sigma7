@@ -53,7 +53,12 @@ export default function Footer() {
         <Location>
           <div>
             <Line>
-              <img src={addressIcon} alt='Adresse de la société Sigma7'></img>
+              <img
+                width='30px'
+                height='30px'
+                src={addressIcon}
+                alt='Adresse de la société Sigma7'
+              ></img>
               <p className='no-m'>
                 Rue Tchaivoski, Résidence Juba B.
                 <br />
@@ -65,7 +70,12 @@ export default function Footer() {
             </Line>
 
             <Line>
-              <img src={emailIcon} alt='Courriel de la société Sigma7'></img>
+              <img
+                width='30px'
+                height='30px'
+                src={emailIcon}
+                alt='Courriel de la société Sigma7'
+              ></img>
               <p>
                 <a href='mailto:email@gmail.com'>email@gmail.com</a>
               </p>
@@ -73,6 +83,8 @@ export default function Footer() {
             <Line>
               <img
                 src={phoneIcon}
+                width='30px'
+                height='30px'
                 alt='Numéro de téléphone de la société Sigma7'
               ></img>
               <p>

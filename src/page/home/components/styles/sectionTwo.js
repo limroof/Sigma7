@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../../../public/img/SectionTwoImg.png";
+import img from "../../../../public/img/SectionTwoImg.jpg";
 
 export const Section = styled.section`
   display: flex;

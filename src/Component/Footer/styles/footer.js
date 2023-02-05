@@ -35,6 +35,7 @@ export const LinksWrapper = styled.div`
 export const Img = styled.img`
   width: 100%;
   max-width: 250px;
+  height: auto;
   margin-bottom: 30px;
 `;
 export const StyledLink = styled(Link)`

@@ -24,7 +24,7 @@ export default function Footer() {
         <LinksWrapper>
           <Img
             width='100%'
-            height='250px'
+            height='83px'
             src={logo}
             alt='Logo sigma7 Societé de construction éléctrique'
           ></Img>

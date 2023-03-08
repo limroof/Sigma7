@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { keyframes } from "styled-components";
-import banner from "../../../../public/img/banner.webp";
-import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import { keyframes } from 'styled-components'
+import banner from '../../../../public/img/banner_.webp'
+import { Link } from 'react-router-dom'
 
-const delayTime = "0.6s";
+const delayTime = '0.6s'
 export const Section = styled.section`
   height: 85vh;
   width: 100%;
@@ -18,12 +18,12 @@ export const Section = styled.section`
   @media (max-width: 900px) {
     margin-bottom: 60px;
   }
-`;
+`
 
 export const Wrapper = styled.div`
 width: 100%;
 }
-`;
+`
 export const H1 = styled.h1`
   color: white;
   max-width: 480px;
@@ -32,7 +32,7 @@ export const H1 = styled.h1`
   @media (max-width: 700px) {
     font-size: 55px;
   }
-`;
+`
 
 const hoverEffect = keyframes`
  0% {
@@ -49,7 +49,7 @@ const hoverEffect = keyframes`
     left: -20%;
     width:10%;
 }
-`;
+`
 const afterHoverEffect = keyframes`
  0% {
     background-color: #fd0505;
@@ -62,7 +62,7 @@ const afterHoverEffect = keyframes`
     width:100%;
     right:0;
 }
-`;
+`
 
 export const Button = styled(Link)`
   > span {
@@ -83,7 +83,7 @@ export const Button = styled(Link)`
   position: relative;
   overflow: hidden;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 10%;
     height: 80%;
@@ -96,7 +96,7 @@ export const Button = styled(Link)`
     );
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -113,4 +113,4 @@ export const Button = styled(Link)`
       animation-delay: ${delayTime};
     }
   }
-`;
+`

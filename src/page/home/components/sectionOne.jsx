@@ -4,7 +4,7 @@ export default function SectionOne() {
   return (
     <Section>
       <Wrapper className='main-mx-w '>
-        <H1>Lorem ipsum dolor sit amet </H1>
+        <H1>Lorem ipsum dolor sit amet</H1>
         <Button to='/contact'>
           <span>Contact us</span>
         </Button>

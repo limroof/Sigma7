@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const HeaderContainer = styled.header`
-  padding: 10px;
+  padding: 10px 35px;
   position: sticky;
   top: 0;
   z-index: 999;
   background-color: #f3f3ff;
-`;
+`
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -15,20 +15,25 @@ export const Nav = styled.nav`
   font-weight: 500;
   line-height: 1.5;
   padding: 20px 0;
-`;
+`
 
 export const Img = styled.img`
   max-width: 149px;
   height: auto;
-`;
+`
 export const Ul = styled.ul`
   list-style: none;
   display: flex;
-  column-gap: 40px;
+  > li {
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
   @media (max-width: 690px) {
     display: none;
   }
-`;
+`
 
 export const Li = styled.li`
   font-size: 20px;
@@ -44,7 +49,7 @@ export const Li = styled.li`
       display: block;
     }
   }
-`;
+`
 
 export const StyledLink = styled(Link)`
   &.active {
@@ -53,4 +58,4 @@ export const StyledLink = styled(Link)`
   &:hover {
     color: #fd0505;
   }
-`;
+`

@@ -15,7 +15,7 @@ body {
   }
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 ul {
   list-style: none;
@@ -48,7 +48,7 @@ p {
 .main-mx-w {
   max-width: 1420px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 35px;
 }
 
 p.strongp {

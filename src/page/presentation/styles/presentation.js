@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import banner from "../../../public/img/pres-banner.webp";
-import Img from "../../../public/img/pres-sec2.webp";
+import styled from 'styled-components'
+import banner from '../../../public/img/pres-banner.webp'
+import Img from '../../../public/img/pres-sec2.webp'
 
-export const Section = styled.div``;
+export const Section = styled.div``
 
 export const Banner = styled.section`
   background-image: url(${banner});
@@ -17,7 +17,7 @@ export const Banner = styled.section`
   }
   @media (max-width: 900px) {
   }
-`;
+`
 
 export const SectionTwo = styled.section`
   display: flex;
@@ -44,20 +44,20 @@ export const SectionTwo = styled.section`
       border-radius: 3px;
     }
   }
-`;
+`
 
 export const H2 = styled.h2`
   margin-top: 0;
   @media (max-width: 700px) {
     margin-top: 33px;
   }
-`;
-export const Paragraph = styled.div``;
+`
+export const Paragraph = styled.div``
 export const Image = styled.div`
-  background-image: url(${Img});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  img {
+    width: 100%;
+    height: auto;
+  }
   align-selft: stretch;
   width: 100%;
   filter: brightness(0.6);
@@ -68,4 +68,4 @@ export const Image = styled.div`
   @media (max-width: 700px) {
     display: none;
   }
-`;
+`

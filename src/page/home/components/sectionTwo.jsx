@@ -1,6 +1,6 @@
-import { Section, H2, Paragraph, Img } from "./styles/sectionTwo.js";
-import img from "../../../public/img/SectionTwoImg.webp";
-import React from "react";
+import { Section, H2, Paragraph, Img } from './styles/sectionTwo.js'
+import img from '../../../public/img/SectionTwoImg.webp'
+import React from 'react'
 
 export default function SectionOne() {
   return (
@@ -17,9 +17,9 @@ export default function SectionOne() {
           accusantium repellendus.
         </Paragraph>
       </div>
-      <Img imgSrc={img}>
-        <div></div>
+      <Img>
+        <img src={img}></img>
       </Img>
     </Section>
-  );
+  )
 }

@@ -5,25 +5,26 @@ import {
   H2,
   Paragraph,
   Image,
-} from "./styles/presentation.js";
-import React from "react";
-import { useEffect } from "react";
-import { reveal } from "../../utils/reveal.js";
-import { useMediaQuery } from "react-responsive";
+} from './styles/presentation.js'
+import Img from '../../public/img/pres-sec2.webp'
+import React from 'react'
+import { useEffect } from 'react'
+import { reveal } from '../../utils/reveal.js'
+import { useMediaQuery } from 'react-responsive'
 export default function Presentation(props) {
-  const isMobileReveal = useMediaQuery({ query: `(max-width: 700px)` });
+  const isMobileReveal = useMediaQuery({ query: `(max-width: 700px)` })
   useEffect(() => {
-    document.title = props.title + " - Sigma7 Société d'éclairage publique";
-    document.querySelector(".fadein") &&
-      document.querySelector(".fadein").classList.add("onPagechange");
-    window.addEventListener("scroll", () => reveal());
-  }, []);
+    document.title = props.title + " - Sigma7 Société d'éclairage publique"
+    document.querySelector('.fadein') &&
+      document.querySelector('.fadein').classList.add('onPagechange')
+    window.addEventListener('scroll', () => reveal())
+  }, [])
 
   return (
     <Section className='fadein'>
       <Banner></Banner>
       <SectionTwo
-        className={!isMobileReveal ? "main-mx-w reveal" : "main-mx-w"}
+        className={!isMobileReveal ? 'main-mx-w reveal' : 'main-mx-w'}
       >
         <Paragraph>
           <H2>Presentation</H2>
@@ -45,8 +46,10 @@ export default function Presentation(props) {
             <li>Electricité industrielle</li>
           </ul>
         </Paragraph>
-        <Image></Image>
+        <Image>
+          <img src={Img} />
+        </Image>
       </SectionTwo>
     </Section>
-  );
+  )
 }
